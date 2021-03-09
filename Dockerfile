@@ -6,8 +6,8 @@ COPY \
   entrypoint.sh \
   /root/
 
-COPY mscgen /opt/mscgen
+COPY mscgen /bin/mscgen
 
-RUN chmod +x /opt/mscgen
+RUN chmod +x /bin/mscgen
 
 ENTRYPOINT ["/root/entrypoint.sh"]
