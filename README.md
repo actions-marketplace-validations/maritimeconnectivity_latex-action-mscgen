@@ -1,4 +1,4 @@
-# latex-action
+# latex-action-mscgen
 
 [![GitHub Actions Status](https://github.com/maritimeconnectivity/latex-action/workflows/Test%20Github%20Action/badge.svg)](https://github.com/maritimeconnectivity/latex-action/actions)
 
