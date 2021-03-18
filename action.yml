@@ -1,6 +1,6 @@
-name: Github Action for LaTeX
-description: GitHub Action to compile LaTeX documents
-author: Cheng XU
+name: Github Action for LaTeX with mscgen
+description: GitHub Action to compile LaTeX documents. Based on the GitHub Action by Cheng Xu. 
+author: Cheng XU and MCC
 inputs:
   root_file:
     description: The root LaTeX file to be compiled
@@ -8,10 +8,10 @@ inputs:
   working_directory:
     description: The working directory for the LaTeX engine
   compiler:
-    description: The LaTeX engine to be invoked
+    description: The LaTeX engine to be invoked. Might need to be set to be set to pdflatex when compiling with mscgen
     default: latexmk
   args:
-    description: Extra arguments to be passed to the LaTeX engine
+    description: Extra arguments to be passed to the LaTeX engine. --shell-escape must be appended when compiling with mscgen
     default: "-pdf -file-line-error -halt-on-error -interaction=nonstopmode"
   extra_packages:
     description: "[Deprecated] Install extra packages by tlmgr"
