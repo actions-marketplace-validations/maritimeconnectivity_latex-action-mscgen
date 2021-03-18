@@ -1,8 +1,8 @@
 # latex-action
 
-[![GitHub Actions Status](https://github.com/xu-cheng/latex-action/workflows/Test%20Github%20Action/badge.svg)](https://github.com/xu-cheng/latex-action/actions)
+[![GitHub Actions Status](https://github.com/oliverhaagh/latex-action/workflows/Test%20Github%20Action/badge.svg)](https://github.com/oliverhaagh/latex-action/actions)
 
-GitHub Action to compile LaTeX documents. Based [latex-action](https://github.com/xu-cheng/texlive-action) by [xu-cheng](https://github.com/xu-cheng) with the addition of the [mscgen](https://www.mcternan.me.uk/mscgen/) binary. 
+GitHub Action to compile LaTeX documents. Based on [latex-action](https://github.com/xu-cheng/texlive-action) by [xu-cheng](https://github.com/xu-cheng) with the addition of the [mscgen](https://www.mcternan.me.uk/mscgen/) binary and the [msctexen](https://github.com/unjello/msctexen) LaTeX package. 
 
 It runs in [a docker image](https://github.com/xu-cheng/latex-docker) with a full [TeXLive](https://www.tug.org/texlive/) environment installed.
 
