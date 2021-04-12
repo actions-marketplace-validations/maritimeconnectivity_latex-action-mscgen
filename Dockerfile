@@ -6,12 +6,8 @@ COPY \
   entrypoint.sh \
   /root/
 
-COPY mscgen /bin/mscgen
+COPY mscgen /usr/local/bin/mscgen
 
-RUN chmod +x /bin/mscgen
-
-ADD https://raw.githubusercontent.com/unjello/msctexen/master/msctexen.sty /usr/local/share/texmf/
-
-RUN mktexlsr
+RUN chmod +x /usr/local/bin/mscgen
 
 ENTRYPOINT ["/root/entrypoint.sh"]
